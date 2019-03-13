@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid system example</title>
+    <link rel="stylesheet" href="/style.css" type="text/css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <style>
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="page-header">
+                        <h1>The Grid System</h1>
+                        <h2>How to use the grid system</h2>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="grid">
+        <div class="container">
+            <br/>
+            <h4>Since a row is divided into 12 every combination that fits into 12 works on one row.</h4>
+            <br/>
+            <h4>Offset and less than 12</h4>
+            <p>If we have a span that is less than 12 we have to offset it if we want it closer to the right of the screen.</p>
+            <div class="row">
+                <div class="col-6 offset-3">
+                    <div class="grid-element"><span>col-6 offset-3 (6+3=9)</span></div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-3 offset-8">
+                    <div class="grid-element"><span>col-3 offset-8 (3+8=11</span></div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-9">
+                    <div class="grid-element"><span>col-9</span></div>
+                </div>
+                <div class="col-1">
+                    <div class="grid-element"><span>col-1</span></div>
+                </div>
+            </div>
+            <h4>Offset - position</h4>
+            <p>If we want the grid to be offset we offset it with the number of single offsets (1+1 here). </p>
+            <div class="row">
+                <div class="col-9 offset-2">
+                    <div class="grid-element"><span>col-9 offset-2</span></div>
+                </div>
+                <div class="col-1">
+                    <div class="grid-element"><span>col-1</span></div>
+                </div>
+            </div>
+            <h4>Wrapped elements > 12</h4>
+            <p>If we divid a row into more than 12, say 16, we get a wrapped row. Here we have col-4 four times (4x4=16) within a [class="row"]. Only three col-4 (3x4=12) fits in one row! so one grid-element is wrapped</p>
+            <div class="row">
+                <div class="col-4">
+                    <div class="grid-element"><span>4</span></div>
+                </div>
+                <div class="col-4">
+                    <div class="grid-element"><span>4</span></div>
+                </div>
+                <div class="col-4">
+                    <div class="grid-element"><span>4</span></div>
+                </div>
+                <div class="col-4">
+                    <div class="grid-element"><span>4 (wrapped)</span></div>
+                </div>
+            </div>
+            <h4>Order of apperance</h4>
+            <p>If we want the smaller span before the larger span we have to add the order-1 and order-2. In the code the "col-9 order-2" span is above the "col-3 order-1"</p>
+            <div class="row">
+                <div class="col-9 order-2">
+                    <div class="grid-element"><span>class="col-9 order-2"</span></div>
+                </div>
+                <div class="col-3 order-1">
+                    <div class="grid-element"><span>class="col-3 order-1"</span></div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="grid-element"><span>col-12</span></div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-6">
+                    <div class="grid-element"><span>col-6</span></div>
+                </div>
+                <div class="col-6">
+                    <div class="grid-element"><span>col-6</span></div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-3">
+                    <div class="grid-element"><span>col-3</span></div>
+                </div>
+                <div class="col-3">
+                    <div class="grid-element"><span>col-3</span></div>
+                </div>
+                <div class="col-3">
+                    <div class="grid-element"><span>col-3</span></div>
+                </div>
+                <div class="col-3">
+                    <div class="grid-element"><span>col-3</span></div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-4">
+                    <div class="grid-element"><span>col-4</span></div>
+                </div>
+                <div class="col-4">
+                    <div class="grid-element"><span>col-4</span></div>
+                </div>
+                <div class="col-4">
+                    <div class="grid-element"><span>col-4</span></div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-4">
+                    <div class="grid-element"><span>4</span></div>
+                </div>
+                <div class="col-8">
+                    <div class="grid-element"><span>col-8</span></div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-1">
+                    <div class="grid-element"><span>col-1</span></div>
+                </div>
+                <div class="col-1">
+                    <div class="grid-element"><span>1</span></div>
+                </div>
+                <div class="col-1">
+                    <div class="grid-element"><span>1</span></div>
+                </div>
+                <div class="col-1">
+                    <div class="grid-element"><span>1</span></div>
+                </div>
+                <div class="col-1">
+                    <div class="grid-element"><span>1</span></div>
+                </div>
+                <div class="col-1">
+                    <div class="grid-element"><span>1</span></div>
+                </div>
+                <div class="col-1">
+                    <div class="grid-element"><span>1</span></div>
+                </div>
+                <div class="col-1">
+                    <div class="grid-element"><span>1</span></div>
+                </div>
+                <div class="col-1">
+                    <div class="grid-element"><span>1</span></div>
+                </div>
+                <div class="col-1">
+                    <div class="grid-element"><span>1</span></div>
+                </div>
+                <div class="col-1">
+                    <div class="grid-element"><span>1</span></div>
+                </div>
+                <div class="col-1">
+                    <div class="grid-element"><span>1</span></div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-4">
+                    <div class="grid-element"><span>4</span></div>
+                </div>
+                <div class="col-8">
+                    <div class="grid-element"><span>8</span></div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-2">
+                    <div class="grid-element"><span>2</span></div>
+                </div>
+                <div class="col-10">
+                    <div class="grid-element"><span>col-10</span></div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-2">
+                    <div class="grid-element"><span>2</span></div>
+                </div>
+                <div class="col-2">
+                    <div class="grid-element"><span>2</span></div>
+                </div>
+                <div class="col-2">
+                    <div class="grid-element"><span>2</span></div>
+                </div>
+                <div class="col-2">
+                    <div class="grid-element"><span>2</span></div>
+                </div>
+                <div class="col-2">
+                    <div class="grid-element"><span>2</span></div>
+                </div>
+                <div class="col-2">
+                    <div class="grid-element"><span>2</span></div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-1">
+                    <div class="grid-element"><span>1</span></div>
+                </div>
+                <div class="col-1">
+                    <div class="grid-element"><span>1</span></div>
+                </div>
+                <div class="col-1">
+                    <div class="grid-element"><span>1</span></div>
+                </div>
+                <div class="col-4">
+                    <div class="grid-element"><span>4</span></div>
+                </div>
+                <div class="col-5">
+                    <div class="grid-element"><span>5</span></div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-4">
+                    <div class="grid-element"><span>4</span></div>
+                </div>
+                <div class="col-4">
+                    <div class="grid-element"><span>4</span></div>
+                </div>
+                <div class="col-2">
+                    <div class="grid-element"><span>2</span></div>
+                </div>
+                <div class="col-2">
+                    <div class="grid-element"><span>2</span></div>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="col-11">
+                    <div class="grid-element"><span>11</span></div>
+                </div>
+                <div class="col-1">
+                    <div class="grid-element"><span>1</span></div>
+                </div>
+            </div>
+            
+        </div>
+    </main>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script>
+        /* global $ */
+        $(document).ready(function() {
+            $('#toggleRows').click(function() {
+                $('.grid .row').toggle();
+                $(this).toggleClass('active');
+            });
+            $('#toggleColumns').click(function() {
+                $('.grid .row > div').toggle();
+                $(this).toggleClass('active');
+            });
+            $('#toggleNumbers').click(function() {
+                $('.grid .grid-element span').toggle();
+                $(this).toggleClass('active');
+            });
+            $('#toggleContainer').click(function() {
+                $('.header > div, .grid > div').toggleClass('container').toggleClass('container-fluid');
+                $(this).toggleClass('active');
+            });
+        });
+    </script>
+</body>
+
+</html>
